@@ -1,0 +1,35 @@
+<html>
+<body>
+<form>
+enter number 1<input type="text" name="num1"/> <br>
+enter number 2<input type="text" name="num2"/> <br>
+<input type="submit">
+</form>
+</body>
+</html>
+<?php
+error_reporting(0);
+$val1=$_REQUEST['num1'];
+$val2=$_REQUEST['num2'];
+
+function mul($val1,$val2)
+{
+	return $val1 * $val2;
+}
+$sum= mul($val1,$val2);
+echo $sum;
+
+function add($val1,$val2)
+{
+	return $val1+$val2;
+}
+$sum= add($val1,$val2);
+echo $sum;
+
+function sub($val1,$val2)
+{
+	return $val1-$val2;
+}
+$sum= sub($val1,$val2);
+echo $sum;
+?>
